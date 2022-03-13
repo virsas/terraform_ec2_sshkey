@@ -1,4 +1,4 @@
-# tfmod_ec2_sshkey
+# terraform_ec2_sshkey
 
 Terraform module to add ssh keys to AWS for EC2 use using terraform.
 
@@ -22,7 +22,7 @@ variable "key_user1" {default = { name = "example", key = "ssh-ed25519 AAAA12345
 # Key
 ###################
 module "ec2_sshkey_user1" {
-  source = "github.com/virsas/tfmod_ec2_sshkey"
+  source = "github.com/virsas/terraform_ec2_sshkey"
   key = var.key_user1
 }
 ```
